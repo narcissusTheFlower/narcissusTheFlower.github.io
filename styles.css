@@ -38,7 +38,7 @@ li {
 
 .links_socials-item::after {
   display: none;
-  content: "📋";
+  content: "📑";
   right: -20px;
   top: 0;
   position: absolute;
