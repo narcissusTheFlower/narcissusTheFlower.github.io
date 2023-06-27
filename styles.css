@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+  }
+  
+  .main_div{
+      color: white;
+      font-family: "Lucida Console", "Courier New", monospace;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  
+  .a_github{
+      color: white;
+      font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .a_gitlab{
+      color: white;
+      font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
