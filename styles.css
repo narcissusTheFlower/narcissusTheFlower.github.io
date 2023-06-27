@@ -1,24 +1,51 @@
 body {
-    background-color: black;
-  }
-  
-  .main_div{
-      color: white;
-      font-family: "Lucida Console", "Courier New", monospace;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-  }
-  
-  .a_github{
-      color: white;
-      font-family: "Lucida Console", "Courier New", monospace;
-  }
-  
-  .a_gitlab{
-      color: white;
-      font-family: "Lucida Console", "Courier New", monospace;
-  }
-  
+  background-color: black;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main_div {
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.links_dev-item {
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.links_socials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.links_socials-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.links_socials-item::after {
+  display: none;
+  content: "📋";
+  right: -20px;
+  top: 0;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.links_socials-item:hover::after {
+  display: block;
+}
