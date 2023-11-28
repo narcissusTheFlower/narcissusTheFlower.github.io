@@ -49,3 +49,11 @@ li {
 .links_socials-item:hover::after {
   display: block;
 }
+
+.icons {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 10px;
+}
