@@ -57,3 +57,8 @@ li {
  flex-wrap: wrap;
  gap: 10px;
 }
+
+.kaard{
+  width: 50%;
+  height: auto;
+}
