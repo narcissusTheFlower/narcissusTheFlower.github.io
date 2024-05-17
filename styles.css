@@ -64,6 +64,6 @@ li {
   transition: all .2s ease-in-out;
 }
 
-.kaard:hover {
-
-}
+/* .kaard:hover {
+transform: scale(1.2);
+} */
