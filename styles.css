@@ -62,3 +62,7 @@ li {
   width: 220px;
   height: auto;
 }
+
+.kaard:hover {
+  transform: scale(1.2);
+}
