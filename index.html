@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>narcissus</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <div class="main_div">
-<!--       Thou gazeth upon a man most handsometh.  -->
-      <div class="gif">
-          <img class="kaard" src="Rouxls_Kaard_face_shop.gif">
-      </div>
-      <div class="name"><h1>Lev V.</h1></div>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<div class="main_div">
 
-      <ul class="links_socials">
+    <div id="slideSource" class="slideSource">Thou gazeth upon a man most handsometh.</div>
+   
+    <div class="gif">
+        <img id="kaard" class="kaard" src="Rouxls_Kaard_face_shop.gif">
+    </div>
+    <div class="name"><h1>Lev V.</h1></div>
+
+    <ul class="links_socials">
         <li><b>Discord:</b> <span class="links_socials-item" onclick="copyToClipboard(this)">narcissus_the_flower</span></li>
         <li><b>Telegram:</b> <span class="links_socials-item" onclick="copyToClipboard(this)">@narcissus_the_flower</span></li>
         <li><b>Email:</b> <span class="links_socials-item" onclick="copyToClipboard(this)">narcissus_mail@mail.ru</span></li>
-      </ul>
+    </ul>
 
-      <div class="links_dev">
+    <div class="links_dev">
         <a class="links_dev-item" href="https://github.com/narcissusTheFlower">GitHub</a>
         <a class="links_dev-item" href="https://gitlab.com/narcissus_the_flower">GitLab</a>
-         <a class="links_dev-item" href="https://habr.com/ru/users/imaginethis/publications/articles/">Habr</a>
-      </div>
-      <br />
+        <a class="links_dev-item" href="https://habr.com/ru/users/imaginethis/publications/articles/">Habr</a>
+    </div>
+    <br/>
 
-      <div class="icons">
+    <div class="icons">
         <span> <img src="https://cdn.simpleicons.org/apachemaven/white" alt="Apachemaven" width="40" height="40"/></span>
         <span> <img src="https://cdn.simpleicons.org/gradle/white" alt="Gradle" width="40" height="40"/></span>
         <span> <img src="https://cdn.simpleicons.org/postgresql/white" alt="Postgresql" width="40" height="40"/></span>
@@ -40,13 +42,26 @@
         <span> <img src="https://cdn.simpleicons.org/git/white" alt="Git" width="40" height="40"/></span>
         <span> <img src="https://cdn.simpleicons.org/gitlab/white" alt="GitLab" width="40" height="40"/></span>
         <span> <img src="https://cdn.simpleicons.org/github/white" alt="GitHub" width="40" height="40"/></span>
-     </div>
     </div>
+</div>
 
-    <script>
-      function copyToClipboard(elem) {
-        navigator.clipboard.writeText(elem.innerText)
-      }
-    </script>
-  </body>
+<script>
+    function copyToClipboard(elem) {
+      navigator.clipboard.writeText(elem.innerText)
+    }
+
+    const kaard = document.getElementById("kaard");
+    
+    var slideSource = document.getElementById('slideSource');
+
+    kaard.onmouseover = function () {
+    	slideSource.classList.toggle('fade');
+    }
+    
+    kaard.onmouseleave = function () {
+    	slideSource.classList.toggle('fade');
+    }
+    
+</script>
+</body>
 </html>
