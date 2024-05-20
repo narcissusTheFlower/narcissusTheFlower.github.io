@@ -64,11 +64,20 @@ li {
   transition: all .2s ease-in-out;
 }
 
+.kaard:hover {
+  transform: scale(1.3);
+}
+
+.slideSource{
+position: relative;
+top: -50px; 
+}
+
 #slideSource {
-  opacity: 1;
-  transition: opacity 1s; 
+  opacity: 0;
+  transition: opacity 0.8s; 
 }
 
 #slideSource.fade {
-  opacity: 0;
+  opacity: 1;
 }
